@@ -8,7 +8,7 @@ Cuando linkeamos nuestros archivos locales con el contenedor mediante el comando
 
 Esto hará que el contendor se porte demasiado lento porque Docker en Windows trabaja sobre el subisistema de Linux (WSL) que instalamos en nuestro Windows. Como el filesystem de linux es diferente al de windows, lo que internamente sucede es que se copian nuestros archivos locales al subsistema de linux y luego de ahí se copian a los archivos del contenedor. Este proceso hace que el contenedor se comporte extremadamente lento dependiendo de la cantidad de archivos en tu proyecto.
 
-Trataré de solucionarte este problema con los siguientes pasos:
+Trataré de solucionarte este problema en los siguientes pasos:
 
 <br/><hr/>
 
@@ -197,4 +197,7 @@ https://forums.docker.com/t/docker-resources-you-dont-have-any-wsl-2-distro-plea
 https://stackoverflow.com/questions/62154016/docker-on-wsl2-very-slow
 
 https://human-se.github.io/rails-demos-n-deets-2020/demo-wsl/
+
+https://forums.docker.com/t/docker-too-slow-to-pick-up-changes-in-local-filesystem/7878/2
+
 
